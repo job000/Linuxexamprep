@@ -1,0 +1,117 @@
+Obligatorisk Innleveringer
+
+
+Obligatorisk Innlevering 1.2: Kommandobasert
+
+1. man -k <søkeord>: dette vil da liste opp alle kommandoer som inneholder ordet <søkeord>.
+
+2. apropos <søkeord>: Som gir sammen resultat som man -k <søkeord>.
+
+3. whatis <søkeord>: Vil da gi vise hvor <søkeord> befinner seg i manual "whatis(1)", i tillegg vil det også inneholde ei linje med forklaring på hva <søkerd> er.
+
+4. man <seksjon> <søkeord>: F.eks.: "man 1 vim" Ved å skrive man -k vim får vi opp liste over forslag på vim og dens seksjoner. Her kan vi utnytte man <seksjon> <søkeord> for å velge en spesifikk fra liste.
+
+5. less /sti/til/fil.filtype: Følende kommando vil da vise filen og i tillegg har vi mulighet til å søke opp i filen ved å skrive /<søkeord>.
+
+6. Endre passord på terminal vindu: Ved å skrive sudo passwd <brukernavn>
+
+7. ps -aux eller ps aux: Viser hvilke prosess som kjører. Vi kan også skrive htop for å se sanntidsprosess som kjører.
+
+8. less kommando: Samme som "more" kommando bare at den gjør litt mer enn "more" kommando.
+
+9. "*": Såkalt wildcards, kan man bruke hvis skal søke etter en fil med navn som starter eller slutter på <søkeord>
+
+	f.eks.: ls -l /etc/*.conf | less   Her er vi på utkikk etter fil i etc mappe som slutter på .conf og bruker less for at vi kan søke etter /
+
+10. MILJØVARIABLER: Vi kan deklarere miljøvariabler ved å skrive "jm@ubuntu:~$ VARIABLENAVN=VARIABLEVERDI" for å se/vise verdien kan vi skrive jm@ubuntu:~$ echo $VARIABLENAVN
+
+11. sudo adduser -c <fulltnavn> <brukernavn>: Følgende kommando lager ny bruker. HUSK! at kun root som får lage en ny bruker vi må dermed skrive sudo eller ved å su.
+
+12. su -l <brukernavn>: For å bytte over til en annen bruker for eksempel til guest: su -l guest deretter passord.
+
+13. printenv: Viser miljøvariabler som er lagret. Ved å skrive printenv | less kan vi f.eks.: søke opp "/OLDPWD" Det står da for OLD Previous Working Directory.
+
+
+Obligatorisk Innlevering 1.3: Prosesser
+
+1. ps: er en kommando som viser kjørende prosesser.
+
+2. PID eller såkalt Process ID: Er unik ID til enhver prosess som kjører.
+
+3. ps T o user,pid,tty,args,stime: For å vise kjørende prosesser kolonne med bruker, PID, TTY, COMMAND/PROGRAM, STARTTIME.
+
+4. Multithreads: Såkalt multitråder, Per prosess har minst en tråd. 
+
+5. En prosess er et program som kjører, har resurser, kan manipuleres, kan stoppes.
+
+6. Håndtering av prosesser:
+
+	Vise: 			Påvirke:
+	- ps			- kill
+	- pstree		- nice
+	- top			- top
+	- System Monitor	- ..
+	- ..
+
+7. Kjører prosesser i bakgrunn eller forgrunn ved bruk av "set +b" eller "set -b"
+
+8. jobs: Viser liste over prosesser/program som kjører eller stoppet.
+
+9. kill -STOP <PID nr>: Vil da suspendere/pausere programmet/prosess.
+
+10. kill -CONT <PID nr>: Starter suspenderte(pauset) program/prosess.
+
+11. kill <PID nr>: Terminere programmet/prosess.
+
+12. Det er da forskjellige varianter av tilstand eller såkalt STATE:
+
+	Prosess tilstander:
+	
+	D	uninterruptible sleep (usually IO)
+	R	running or runnable (on run queue)
+	S	interruptible sleep (waiting for an event to complete)
+	T	stopped, either by a job control signal or because it is being traced
+	W	paging (not valid since the 2.6.xx kernel)
+	X	dead (should never be seen)
+	Z 	defunct("zombie") process, terminated but not reaped by its parent
+
+13. less er en iteraktiv kommando.
+
+14. pi 1000 | wc -c: Kan kjøre følgende kommando for å telle antallet sifre + punkt
+
+15. <programnavn> bg: For å kjøre programmet i bakgrunn.
+
+16. ps -a -ostat,args,ppid | less: viser en liste av prosesser som kjører dens tilstand(S,D,Z, osv..), navn, foreldreprosess.
+
+17. ps ax | grep <program navn>: Søker etter program/prosess sin pid/prosess id.
+
+18. INODE: For enhver fil i et operativsystem finnes det en indeks node eller såkalt inode.
+
+	INODE inneholder all informasjon av filen bortsett i fra inneholde av fil og dens navn.
+	Tenk på det som en personlig ID eller pass (uten navn).
+
+19. Det er to typer Lenke:
+
+	1. Soft lenke eller symbolsk lenke:
+
+	- Tenk på det som en snarvei til original filen. 
+	- Det er en peker til original filen.
+	- INODE nummer til symbolsk lenke er ulik INODE til original filen.
+	- Mindre størrelse enn original filen.
+	- Man kan ha flere sybolsk lenke til en original fil men disse symbolsk lenke har ulike INODE.
+	- Hvis man sletter original filen blir symbolsk lenke ubrukelig.
+
+	2. Harde lenke:
+	
+	- Man kan se på harde lenke som et annet navn for samme filen.
+	- Man kan også se på harde lenke som en kopi av original filen.
+	- I motsetning til symbolsk lenke der størrelsen er mindre enn original har harde lenke samme størrelse som original fil.
+	- Harde lenke har også samme INODE som original filen.
+	- Man kan ha flere harde lenke av original fil men alle harde lenke får samme INODE som original fil.
+	- Hvis man sletter original filen vil det IKKE være noe konsekvense for harde lenke.
+
+20. grep: kan brukes for å søke etter spesifikk filnavn eller tekst osv.. For eksempel ved å skrive grep ".*no" wildcardtes.txt
+	
+	Der wildcardtest.txt inneholder Another text.. vil den vise at filen inneholder Ano
+
+21. 
