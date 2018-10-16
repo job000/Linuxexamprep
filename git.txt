@@ -1,10 +1,11 @@
 If file edited do the following:
 
-Step 1: git push origin master, <-- where master (can be any other branch)is the branch and origin is the clone(can be called something else)
+Step 1: git add <TheFileYouWantToAdd>, or if we would add everything write "." dot after add.
 
-Step 2: git add <TheFileYouWantToAdd>, or if we would add everything write "." dot after add.
+Step 2: git commit -m "<AddCommentsHere>", Remember comments must be in double qoutes "".
 
-Step 3: git commit -m "<AddCommentsHere>", Remember comments must be in double qoutes "".
+Step 3: git push origin master, <-- where master (can be any other branch)is the branch and origin is the clone(can be called something else)
+
 
 Step 4: git status, Check status by giving the following command.
 
