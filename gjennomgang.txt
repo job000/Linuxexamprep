@@ -1,0 +1,111 @@
+Kan få spørsmål om:
+
+PDF nr.: 4 Installere og oppdatere programmer
+
+APT spørsmål
+
+- Hvordan slette
+ - sudo apt purge <programmet>
+ - autoremove etterpå
+
+- Kan få spørsmål om man hvordan man fungere
+
+
+PDF nr.: 5 Introduksjon til operativsystemer
+
+- POSIX: Portable Operation System Interface
+	OS sin måte å kalle på
+
+
+PDF nr.: 6 Hjelpesystemer og dokumentasjon
+
+- UNIX boka publisert i 1971
+
+- spørsmål om man de 8 seksjoner
+
+- 
+
+PDF nr.: 7 Kommandkobasert
+
+- Miljøvariable: Hvordan definere Miljøvariable
+
+- ls 
+
+- wc: Hva wc gjør. Svar wc teller antall bokstaver.
+
+- rm
+
+- cat 
+
+- Jokertegn eller såkalt wildcards
+
+
+PDF nr.: 8 Prosesser
+
+- Multithread
+
+- PID, GUID 
+
+- Spørsmål om hvem eieren av prosessen (UID)
+
+- bak og forgrunn
+
+- tar pause en prosess
+
+- Signal kan få spørsmål om. 
+
+- Hvordan ps kommando fungere generelt
+
+
+PDF nr.: 9 Filsystem
+
+- cp, rm, mv
+
+- fifo
+
+- Hvordan symbolsk lenke og harde lenke fungere
+
+- INODE nummeret
+
+- / rotkatalogen
+
+- /dev/null: ingenting!
+
+- Standard katalog og filer
+
+- Skjulte filer
+
+
+PDF nr.: 10 Skallet
+
+- Hvem har lagd shell: Svar: Louis Pouzin i 1964/65
+
+- sh: Bourne Shell
+
+- !! kjører siste kommando
+
+- ctrl+R
+
+- Miljøvariable
+
+
+PDF nr.: 11: Tilgangsrettigheter
+
+- chmod
+
+- sticky bit
+
+- Access Control List (ACL)
+
+- Kan ikke endre på rettighet på symbolsk lenke!
+
+
+PDF nr.: 12: Skallprogram
+
+- Shebang #!
+
+- if-setningen fungere
+
+- while-løkka og for-løkka
+
+

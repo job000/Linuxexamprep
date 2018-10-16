@@ -92,7 +92,7 @@ Obligatorisk Innlevering 1.3: Prosesser
 
 19. Det er to typer Lenke:
 
-	1. Soft lenke eller symbolsk lenke:
+	1. Soft lenke eller symbolsk lenke: lages ved å skrive ln -s <NavnPåOriginalFil> <navnPåSymbolskLenke>
 
 	- Tenk på det som en snarvei til original filen. 
 	- Det er en peker til original filen.
@@ -101,7 +101,7 @@ Obligatorisk Innlevering 1.3: Prosesser
 	- Man kan ha flere sybolsk lenke til en original fil men disse symbolsk lenke har ulike INODE.
 	- Hvis man sletter original filen blir symbolsk lenke ubrukelig.
 
-	2. Harde lenke:
+	2. Harde lenke: ln <NavnPåOriginalFil> <NavnPåHardeLenke>
 	
 	- Man kan se på harde lenke som et annet navn for samme filen.
 	- Man kan også se på harde lenke som en kopi av original filen.
@@ -114,8 +114,35 @@ Obligatorisk Innlevering 1.3: Prosesser
 	
 	Der wildcardtest.txt inneholder "Another text.." vil den vise at filen inneholder Ano
 
+Streams
+
 21.  	cat : Uten filnavn sender input til output
 	<   : Sender innholdet av en fil som input til en kommando
 	>   : Sender output av en kommando til en fil
 		Husk at disse kun lager en kopi.
+
+22.  Standard file Description:
+
+	stdin	0
+	stdout	1
+	stderr	2
+
+	ex.: ./sfd.sh > output.txt > &1 
+
+23. Mapper er filer! 
+
+24. find command: Eksempel "find / -name *.conf" Bruk av "find" kommando og wildcard(*).
+
+25. ~ : Home directory
+
+26. / : Root direcotory
+
+27. "." : Representerer mappe man står i
+
+28. ".." : Representerer foreldre mappe
+
+29. head : Rekkefølge fra minst til størst nedover
+
+30. tail : Rekkefølge fra størst til mist nedover
+
 
