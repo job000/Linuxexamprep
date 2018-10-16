@@ -1,0 +1,10 @@
+This is to print out to stdout file.
+This is where to add to stderr file.
+This is to print out to stdout file.
+This is where to add to stderr file.
+This is to print out to stdout file.
+This is where to add to stderr file.
+This is to print out to stdout file.
+This is where to add to stderr file.
+This is to print out to stdout file.
+This is where to add to stderr file.

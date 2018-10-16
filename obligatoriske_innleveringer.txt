@@ -112,6 +112,10 @@ Obligatorisk Innlevering 1.3: Prosesser
 
 20. grep: kan brukes for å søke etter spesifikk filnavn eller tekst osv.. For eksempel ved å skrive grep ".*no" wildcardtes.txt
 	
-	Der wildcardtest.txt inneholder Another text.. vil den vise at filen inneholder Ano
+	Der wildcardtest.txt inneholder "Another text.." vil den vise at filen inneholder Ano
 
-21. 
+21.  	cat : Uten filnavn sender input til output
+	<   : Sender innholdet av en fil som input til en kommando
+	>   : Sender output av en kommando til en fil
+		Husk at disse kun lager en kopi.
+

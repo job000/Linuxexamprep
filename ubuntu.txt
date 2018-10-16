@@ -1,2 +1,6 @@
-This is a features to be added in txt file.
-Ubuntu tekst
+
+dwight 2
+drain 1
+siter 4
+drain 3
+dwight 6
